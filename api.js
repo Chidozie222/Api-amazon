@@ -19,7 +19,7 @@ const JWT_SECRET =
   "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi78272jbkj?[]]pou89ywe";
 
 
-let mongoUrl = "mongodb://127.0.0.1:27017/firstdb";
+let mongoUrl = "mongodb+srv://john:fugZrMMyLCnb8In9@cluster0.cyzwmu6.mongodb.net/?retryWrites=true&w=majority/firstdb";
 
 mongoose
   .connect(mongoUrl, {
