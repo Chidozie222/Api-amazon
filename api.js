@@ -131,10 +131,10 @@ api.get('/product', async(req, res)=> {
     res.send(output)
 })
 
-api.get('/product_name/:product_name', async(req, res)=> {
+api.get('/product_name', async(req, res)=> {
     let query = {};
-    if(req.params.product_name){
-        query={product_name:req.params.product_name}
+    if(req.query.product_name){
+        query={product_name:req.query.product_name}
     } else{
         query = {}
     }
