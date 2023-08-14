@@ -9,7 +9,7 @@ const UserDetailsScehma = new mongoose.Schema(
     password: String,
     Phone: String,
     Dob: String,
-    Address: String,
+    Address String,
     userType: String,
   },
   {
