@@ -41,7 +41,7 @@ api.get('/', (req, res) => {
 
 
 api.post("/register", async (req, res) => {
-    const { fname, lname, Oname, email, password, Phone } = req.body;
+    const { fname, lname, Oname, email, password, Phone, Dob, Address } = req.body;
     const encryptedPassword = await bcrypt.hash(password, 10);
    
     try {
@@ -57,6 +57,8 @@ api.post("/register", async (req, res) => {
         email,
         password: encryptedPassword,
         Phone,
+        Dob,
+        Address,
       });
       res.send({ status: "ok" });
     } catch (error) {
